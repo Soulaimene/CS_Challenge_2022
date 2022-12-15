@@ -117,5 +117,3 @@ def load_img_path(data_path):
         L.append(os.path.join(data_path,filename))
     return L
 
-try3=Utils("C:/Users/soula/.spyder-py3/CS Data",'C:/Users/soula/.spyder-py3/CS Data/Input_data',"C:/Users/soula/.spyder-py3/CS Data/output filled data")
-name,test=try3.fix_data_filled()
