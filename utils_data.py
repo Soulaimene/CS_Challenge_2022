@@ -20,8 +20,8 @@ from PIL import Image
 
 
 class Utils(object):
-    def __init__(self ,data_path,input_data,output_filled_data):
-        self.data_path=data_path
+    def __init__(self ,input_data,output_filled_data):
+        
         self.input_data=input_data
         self.output_filled_data=output_filled_data
         self.Name=[]
