@@ -41,6 +41,7 @@ within the [unet1()](https://drive.google.com/drive/folders/12WbBJm1f62Z40l8QBV9
 you will find the notebook (".ipynb" file) for training the model.
 
 # Results 
+You can refer to this table for some of our top predictions made using various  Crater U-Net models.
 <table>
   <tr>
     <td valign="top">  circle with a thick edge </td>
@@ -48,7 +49,7 @@ you will find the notebook (".ipynb" file) for training the model.
   </tr>
   <tr>
     <td valign="top"> filled circle prediction </td>
-    <td valign="top"><img src="imgs/filled.png" alt="filled",width="40%"> </td>
+    <td valign="top"><img src="imgs/filled_prediction.png" alt="filled",width="40%"> </td>
   </tr>
    <tr>
     <td valign="top"> circle with a thin edge </td>
