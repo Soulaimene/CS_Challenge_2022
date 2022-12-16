@@ -12,7 +12,7 @@ from pandas import DataFrame
 from utils_data import Utils
 
 class Models(object):
-    def __init__(self,epochs,bs,data_path,input_path,mask_path):
+    def __init__(self,epochs,bs,input_path,mask_path):
         self.epochs=epochs
         self.batch_size=bs
         self.unet_0=0
@@ -23,7 +23,7 @@ class Models(object):
         self.unet_5=5
         self.unet_6=6
         
-        self.data_path=data_path
+
         self.input_path=input_path
         self.mask_path=mask_path
      
