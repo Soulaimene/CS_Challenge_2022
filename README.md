@@ -63,3 +63,4 @@ Here is a graph that shows the validation loss and validation accuracy for 7 dif
 <div>
   <img  src="imgs/val_res.png" alt="train" width="60%">
 </div>
+Special thanks to all IEEE Sup'Com SB members that helped in the development of this project ♥♥♥
