@@ -18,6 +18,6 @@ python main.py --n_epoch 50 --n_bs 32  --n_unet 0
 ```
 > Note : If you did not save the datasets in the cloned folder, you will need to specify the path to your input data and masks data, as well as the path to all other relevant data.
 ```bash 
-python main.py --n_epoch 50 --n_bs 32  --n_unet 0 --data_p "/data_path/" --Input_p "/Input_data_path/" --mask_p "/mask_data_path/"
+python main.py --n_epoch 50 --n_bs 32  --n_unet 0 --Input_p "/Input_data_path/" --mask_p "/mask_data_path/"
 ```
 You need to ensure that you have a compatible version of TensorFlow installed, as well as the appropriate versions of CUDA and cuDNN. These tools allow TensorFlow to use the GPU for acceleration, which can significantly improve the performance of machine learning tasks. 
