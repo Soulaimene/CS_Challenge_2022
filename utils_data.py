@@ -43,12 +43,14 @@ class Utils(object):
             self.Name.append(nom)
             self.test.append(ch)
         return self.Name, self.test
+    
     def DataToDataframe(self):
         data=[]
         for i in range(4950) :
             data.append([self.test[i],self.output_filled[i]])
         df=pd.DataFrame(data,columns=['input_image','output'])
         return df
+    
     def visualize_data(self,N):
         df=self.DataToDataframe()
         plt.figure(figsize=(10,10))
@@ -64,14 +66,14 @@ class Utils(object):
     def data_loader(self):
         df=self.DataToDataframe()
             
-        data_train,data_test=train_test_split(df,test_size=0.1)
-        data_train,data_val=train_test_split(data_train,test_size=0.2)
+        self.data_train ,self.data_test = train_test_split(df[:10],test_size=0.1)
+        self.data_train ,self.data_val = train_test_split(self.data_train,test_size=0.2)
         datagen = ImageDataGenerator(horizontal_flip=True,vertical_flip=True,zoom_range=0.2)
         datagenM = ImageDataGenerator(rescale=1./255,horizontal_flip=True,vertical_flip=True,zoom_range=0.2)
 
 
 
-        image_train=datagen.flow_from_dataframe(data_train,  
+        image_train=datagen.flow_from_dataframe(self.data_train,  
                                 target_size=(256,256), 
                                 color_mode='grayscale',
                                 shuffle=True,
@@ -81,7 +83,7 @@ class Utils(object):
                                 class_mode=None
                                 
                                 )
-        mask_train=datagenM.flow_from_dataframe(data_train, 
+        mask_train=datagenM.flow_from_dataframe(self.data_train, 
                                 target_size=(256,256), 
                                 color_mode='grayscale',
                                 shuffle=True,
@@ -90,7 +92,7 @@ class Utils(object):
                                 batch_size=32,
                                 class_mode=None
                                 )
-        image_validation=datagen.flow_from_dataframe(data_val,  
+        image_validation=datagen.flow_from_dataframe(self.data_val,  
                                 target_size=(256,256), 
                                 color_mode='grayscale',
                                 shuffle=True,
@@ -100,7 +102,7 @@ class Utils(object):
                                 class_mode=None
                                 )
 
-        mask_validation=datagenM.flow_from_dataframe(data_val, 
+        mask_validation=datagenM.flow_from_dataframe(self.data_val, 
                                 target_size=(256,256), 
                                 color_mode='grayscale',
                                 shuffle=True,
@@ -111,6 +113,7 @@ class Utils(object):
                                 )
         self.train_gen=zip(image_train,mask_train)
         self.valid_gen=zip(image_validation,mask_validation)
+        
 def load_img_path(data_path):
     L=[]
     for filename in os.listdir(data_path) :
