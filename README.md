@@ -29,7 +29,7 @@ If your local computer does not have the required versions of TensorFlow, CUDA, 
 <table>
   <tr>
     <td valign="top"><img src="imgs/drive_shortcut.jpg" alt="shortcut",width="40%"> </td>
-    <td valign="top"><p>;"><br/>To create a shortcut to the CS_challenge drive, right-click on the drive and select "Add shortcut to Drive." Then, 
+    <td valign="top"><p><br/>To create a shortcut to the CS_challenge drive, right-click on the drive and select "Add shortcut to Drive." Then, 
     move the shortcut to your own drive.
     To run Google Colaboratory notebooks, you need to access the data from your own drive rather than shared drives. Therefore, we create the shortcut</p> </td>
   </tr>
@@ -49,7 +49,7 @@ You can refer to this table for some of our top predictions made using various  
   </tr>
   <tr>
     <td valign="top"> filled circle prediction </td>
-    <td valign="top"><img src="imgs/filled_prediction.png" alt="filled",width="40%"> </td>
+    <td valign="top"><img src="imgs/filled_pred.png" alt="filled",width="40%"> </td>
   </tr>
    <tr>
     <td valign="top"> circle with a thin edge </td>
@@ -57,3 +57,4 @@ You can refer to this table for some of our top predictions made using various  
   </tr>
 
 </table>
+Here is a graph that shows the validation loss and validation accuracy for 7 different Crater U-net architectures.
