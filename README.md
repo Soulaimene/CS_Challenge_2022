@@ -22,7 +22,7 @@ python main.py --n_epoch 50 --n_bs 32  --n_unet 0
 python main.py --n_epoch 50 --n_bs 32  --n_unet 0 --Input_p "/Input_data_path/" --mask_p "/mask_data_path/"
 ```
 You need to ensure that you have a compatible version of TensorFlow installed, as well as the appropriate versions of CUDA and cuDNN. These tools allow TensorFlow to use the GPU for acceleration, which can significantly improve the performance of machine learning tasks. 
-## Remote Train
+## Remote training
 
 If your local computer does not have the required versions of TensorFlow, CUDA, and cuDNN installed, you can still train any of the 7 UNET models by accessing the specified [drive](https://drive.google.com/drive/folders/1W23o71RVu513O8AT20DxYGukyeAhguD6?usp=share_link).
 
@@ -58,3 +58,8 @@ You can refer to this table for some of our top predictions made using various  
 
 </table>
 Here is a graph that shows the validation loss and validation accuracy for 7 different Crater U-net architectures.
+</br>
+</br>
+<div>
+  <img  src="imgs/val_res.png" alt="train" width="60%">
+</div>
