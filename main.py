@@ -21,7 +21,7 @@ if __name__ == "__main__" :
     # parser.add_argument('--N_data', type=int,
     #                   help="Data number in the dataframe")
     args = parser.parse_args()
-    try1=Models(args.n_epoch,args.n_bs,args.data_p,args.Input_p,args.mask_p)
+    try1=Models(args.n_epoch,args.n_bs,args.Input_p,args.mask_p)
 
     try1.id_model(args.n_unet)
     try1.compile_model()
