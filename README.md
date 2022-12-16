@@ -39,3 +39,20 @@ The drive contains the necessary resources and tools for training the models. Fo
 
 within the [unet1()](https://drive.google.com/drive/folders/12WbBJm1f62Z40l8QBV9mZRXNbk68IZcR?usp=sharing), 
 you will find the notebook (".ipynb" file) for training the model.
+
+# Results 
+<table>
+  <tr>
+    <td valign="top">  circle with a thick edge </td>
+    <td valign="top"> <img src="imgs/thick.png" alt="thick",width="40%"></td>
+  </tr>
+  <tr>
+    <td valign="top"> filled circle prediction </td>
+    <td valign="top"><img src="imgs/filled.png" alt="filled",width="40%"> </td>
+  </tr>
+   <tr>
+    <td valign="top"> circle with a thin edge </td>
+    <td valign="top"><img src="imgs/thin.png" alt="filled",width="40%"> </td>
+  </tr>
+
+</table>
