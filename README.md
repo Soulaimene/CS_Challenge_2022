@@ -5,7 +5,7 @@ To begin, you will need to clone this GitHub repository :
 git clone https://github.com/Soulaimene/CS_Challenge_2022.git
 
 ```
-To obtain the data, you will need to access the [drive](https://drive.google.com/drive/folders/1W23o71RVu513O8AT20DxYGukyeAhguD6?usp=sharing) we have created. In this drive, you will find a zipped dataset called "Input_data.zip." Download this file and unzip it in the cloned folder.
+To obtain the data, you will need to access the [Akram Dhouib drive](https://drive.google.com/drive/folders/1W23o71RVu513O8AT20DxYGukyeAhguD6?usp=sharing) we have created. In this drive, you will find a zipped dataset called "Input_data.zip." Download this file and unzip it in the cloned folder.
 
 Before training, if you want to use the dataset to train a model for semantic segmentation of filled data, you will need to : 
 * Access the "filled" folder in the drive and download the zipped dataset "output filled data." 
